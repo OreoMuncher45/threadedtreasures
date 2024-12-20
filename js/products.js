@@ -118,7 +118,7 @@ function showProductModal(product) {
                     ${product.colors.map(color => `<li>${color}</li>`).join('')}
                 </ul>
             </div>
-            <a href="https://www.instagram.com/threadedtreasures.tt" target="_blank" class="order-button">
+            <a href="https://www.instagram.com/threadedtreasures.tt" target="_blank" rel="noopener noreferrer" class="order-button">
                 <i class="fab fa-instagram"></i> Order on Instagram
             </a>
         </div>

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.className = 'featured-card';
         
         card.innerHTML = `
-            <div class="product-image">
+            <div class="product-image" style="background-color: var(--soft-pink);">
                 <div class="product-placeholder">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
             </div>
             <div class="product-info">
@@ -19,16 +19,34 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         
+        // Add click event to show modal
+        card.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('view-more')) {
+                showProductModal(product);
+            }
+        });
+
         return card;
     }
 
     // Get one product from each category
     const categories = ['scrunchies', 'headbands', 'keychains', 'accessories'];
+    
+    // First, clear the grid
+    featuredGrid.innerHTML = '';
+    
+    // Add products
     categories.forEach(category => {
-        const product = products.find(p => p.category === category);
+        // Find the first product in each category
+        const product = window.products.find(p => p.category === category);
         if (product) {
             const card = createProductCard(product);
             featuredGrid.appendChild(card);
+            
+            // Initialize tilt effect if available
+            if (typeof addTiltEffect === 'function') {
+                addTiltEffect(card);
+            }
         }
     });
 });
