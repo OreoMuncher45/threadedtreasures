@@ -2,22 +2,22 @@
 const products = [
     {
         id: 'SCR001',
-        name: 'Classic Pink Scrunchie',
+        name: '🍏 Green Apple/Red Apple Scrunchie 🍎',
         category: 'scrunchies',
-        price: '$8.99',
-        description: 'A delicate pink scrunchie perfect for everyday wear. Made with soft cotton yarn.',
-        images: ['images/products/scrunchies/pink-scrunchie-1.jpg', 'images/products/scrunchies/pink-scrunchie-2.jpg'],
+        price: '$29.99',
+        description: 'Fresh-picked style for your hair! These fruity scrunchies bring a pop of playful charm with their vibrant apple-inspired hues—perfect for adding a sweet twist to any outfit. 😊',
+        images: ['images/products/scrunchies/pink-scrunchie-1.jpg', 'images/products/scrunchies/applescrunchie.jpg'],
         details: 'Handmade with love using 100% cotton yarn. Perfect for all hair types and gentle on your hair.',
         colors: ['Pink', 'Available in other colors upon request'],
         featured: true
     },
     {
         id: 'SCR002',
-        name: 'Pastel Rainbow Scrunchie',
+        name: '🍅 Tomato Scrunchie 🍅',
         category: 'scrunchies',
-        price: '$10.99',
-        description: 'Multi-colored pastel scrunchie featuring a beautiful rainbow pattern.',
-        images: ['images/products/scrunchies/rainbow-scrunchie-1.jpg'],
+        price: '$24.99',
+        description: 'Fresh, fun, and totally unique! This vibrant red scrunchie adds a pop of charm to any look—perfect for a playful twist on your everyday style. 😊',
+        images: ['images/products/scrunchies/tomatoscrunchie.jpg'],
         details: 'Created with premium acrylic yarn in pastel shades. Each piece is unique!',
         colors: ['Pastel Rainbow']
     },
