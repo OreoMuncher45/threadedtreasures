@@ -231,7 +231,7 @@ html {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--accent-pink);
+    background-color: #FF69B4;
     color: white !important;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
@@ -240,6 +240,7 @@ html {
     border: none;
     cursor: pointer;
     margin-top: 1rem;
+    opacity: 1;
 }
 
 .order-button i {
@@ -247,7 +248,7 @@ html {
 }
 
 .order-button:hover {
-    background-color: var(--primary-pink);
+    background-color: #FF1493;
 }
 
 /* Social Icons */
@@ -574,5 +575,75 @@ footer {
     .view-more:active,
     button:active {
         background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* Modal Image Container */
+.modal-image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    aspect-ratio: 9/16;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.modal-image-container .product-image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 1000px;
+    position: relative;
+}
+
+.modal-body {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.modal-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+    }
+    
+    .modal-image-container {
+        width: 100%;
+        max-width: none;
     }
 }

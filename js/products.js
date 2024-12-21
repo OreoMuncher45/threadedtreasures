@@ -6,9 +6,9 @@ const products = [
         category: 'scrunchies',
         price: '$29.99',
         description: 'Fresh-picked style for your hair! These fruity scrunchies bring a pop of playful charm with their vibrant apple-inspired hues—perfect for adding a sweet twist to any outfit. 😊',
-        images: ['images/products/scrunchies/pink-scrunchie-1.jpg', 'images/products/scrunchies/applescrunchie.jpg'],
+        images: ['images/products/applescrunchie.jpg'],
         details: 'Handmade with love using 100% cotton yarn. Perfect for all hair types and gentle on your hair.',
-        colors: ['Pink', 'Available in other colors upon request'],
+        colors: ['Green', 'Red', 'Available in other colors upon request'],
         featured: true
     },
     {
@@ -17,9 +17,10 @@ const products = [
         category: 'scrunchies',
         price: '$24.99',
         description: 'Fresh, fun, and totally unique! This vibrant red scrunchie adds a pop of charm to any look—perfect for a playful twist on your everyday style. 😊',
-        images: ['images/products/scrunchies/tomatoscrunchie.jpg'],
+        images: ['images/products/tomatoscrunchie.jpg'],
         details: 'Created with premium acrylic yarn in pastel shades. Each piece is unique!',
-        colors: ['Pastel Rainbow']
+        colors: ['Tomato', 'Available in other colors upon request'],
+        featured: true
     },
     
 ];
@@ -39,8 +40,11 @@ function createProductCard(product, isFeatured = false) {
     card.setAttribute('data-product-id', product.id);
     
     card.innerHTML = `
-        <div class="product-image" style="background-color: var(--soft-pink);">
-            <div class="product-placeholder">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
+        <div class="product-image">
+            ${product.images && product.images.length > 0 
+                ? `<img src="${product.images[0]}" alt="${product.name}" loading="lazy">` 
+                : `<div class="product-placeholder">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>`
+            }
         </div>
         <div class="product-info">
             <h3>${product.name}</h3>
@@ -59,23 +63,27 @@ function showProductModal(product) {
     const modalBody = modal.querySelector('.modal-body');
     modalBody.innerHTML = `
         <div class="modal-image-container">
-            <div class="product-image" style="background-color: var(--soft-pink);">
-                <div class="product-placeholder">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
+            <div class="product-image">
+                ${product.images && product.images.length > 0 
+                    ? `<img src="${product.images[0]}" alt="${product.name}" loading="lazy">` 
+                    : `<div class="product-placeholder">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>`
+                }
             </div>
         </div>
         <div class="modal-info">
             <h2>${product.name}</h2>
-            <div class="modal-code">#${product.id}</div>
+            <div class="product-code">#${product.id}</div>
             <div class="product-price">${product.price}</div>
             <p class="product-description">${product.description}</p>
-            <div class="product-details">
-                <h4>Details:</h4>
-                <p>${product.details}</p>
-                <h4>Available Colors:</h4>
-                <ul>
-                    ${product.colors.map(color => `<li>${color}</li>`).join('')}
-                </ul>
-            </div>
+            
+            <h4>Details:</h4>
+            <p>${product.details}</p>
+            
+            <h4>Available Colors:</h4>
+            <ul>
+                ${product.colors.map(color => `<li>${color}</li>`).join('')}
+            </ul>
+
             <a href="https://www.instagram.com/threadedtreasures.tt" target="_blank" rel="noopener noreferrer" class="order-button">
                 <i class="fab fa-instagram"></i> Order on Instagram
             </a>
