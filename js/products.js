@@ -21,49 +21,7 @@ const products = [
         details: 'Created with premium acrylic yarn in pastel shades. Each piece is unique!',
         colors: ['Pastel Rainbow']
     },
-    {
-        id: 'HB001',
-        name: 'Floral Headband',
-        category: 'headbands',
-        price: '$15.99',
-        description: 'Elegant headband with crocheted flowers. Perfect for spring and summer.',
-        images: ['images/products/headbands/floral-headband-1.jpg'],
-        details: 'Features delicate flower details. Comfortable fit for all-day wear.',
-        colors: ['White with Pink Flowers', 'Custom colors available'],
-        featured: true
-    },
-    {
-        id: 'HB002',
-        name: 'Twisted Knot Headband',
-        category: 'headbands',
-        price: '$12.99',
-        description: 'Classic twisted knot design headband, perfect for any occasion.',
-        images: ['images/products/headbands/twisted-headband-1.jpg'],
-        details: 'Featuring a comfortable stretch and elegant twisted design.',
-        colors: ['Blush Pink', 'Cream', 'Gray']
-    },
-    {
-        id: 'KC001',
-        name: 'Mini Heart Keychain',
-        category: 'keychains',
-        price: '$7.99',
-        description: 'Adorable heart-shaped keychain with secure metal ring.',
-        images: ['images/products/keychains/heart-keychain-1.jpg'],
-        details: 'Made with durable yarn and includes a strong metal keyring.',
-        colors: ['Red', 'Pink', 'White'],
-        featured: true
-    },
-    {
-        id: 'ACC001',
-        name: 'Butterfly Hair Clip',
-        category: 'accessories',
-        price: '$9.99',
-        description: 'Delicate butterfly-shaped hair clip with secure fastening.',
-        images: ['images/products/accessories/butterfly-clip-1.jpg'],
-        details: 'Handcrafted butterfly design attached to a reliable hair clip.',
-        colors: ['Purple', 'Pink', 'Blue'],
-        featured: true
-    }
+    
 ];
 
 // DOM Elements
