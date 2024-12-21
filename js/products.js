@@ -2,68 +2,26 @@
 const products = [
     {
         id: 'SCR001',
-        name: 'Classic Pink Scrunchie',
+        name: '🍏 Green Apple/Red Apple Scrunchie 🍎',
         category: 'scrunchies',
-        price: '$8.99',
-        description: 'A delicate pink scrunchie perfect for everyday wear. Made with soft cotton yarn.',
-        images: ['images/products/scrunchies/pink-scrunchie-1.jpg', 'images/products/scrunchies/pink-scrunchie-2.jpg'],
+        price: '$29.99',
+        description: 'Fresh-picked style for your hair! These fruity scrunchies bring a pop of playful charm with their vibrant apple-inspired hues—perfect for adding a sweet twist to any outfit. 😊',
+        images: ['images/products/scrunchies/pink-scrunchie-1.jpg', 'images/products/scrunchies/applescrunchie.jpg'],
         details: 'Handmade with love using 100% cotton yarn. Perfect for all hair types and gentle on your hair.',
         colors: ['Pink', 'Available in other colors upon request'],
         featured: true
     },
     {
         id: 'SCR002',
-        name: 'Pastel Rainbow Scrunchie',
+        name: '🍅 Tomato Scrunchie 🍅',
         category: 'scrunchies',
-        price: '$10.99',
-        description: 'Multi-colored pastel scrunchie featuring a beautiful rainbow pattern.',
-        images: ['images/products/scrunchies/rainbow-scrunchie-1.jpg'],
+        price: '$24.99',
+        description: 'Fresh, fun, and totally unique! This vibrant red scrunchie adds a pop of charm to any look—perfect for a playful twist on your everyday style. 😊',
+        images: ['images/products/scrunchies/tomatoscrunchie.jpg'],
         details: 'Created with premium acrylic yarn in pastel shades. Each piece is unique!',
         colors: ['Pastel Rainbow']
     },
-    {
-        id: 'HB001',
-        name: 'Floral Headband',
-        category: 'headbands',
-        price: '$15.99',
-        description: 'Elegant headband with crocheted flowers. Perfect for spring and summer.',
-        images: ['images/products/headbands/floral-headband-1.jpg'],
-        details: 'Features delicate flower details. Comfortable fit for all-day wear.',
-        colors: ['White with Pink Flowers', 'Custom colors available'],
-        featured: true
-    },
-    {
-        id: 'HB002',
-        name: 'Twisted Knot Headband',
-        category: 'headbands',
-        price: '$12.99',
-        description: 'Classic twisted knot design headband, perfect for any occasion.',
-        images: ['images/products/headbands/twisted-headband-1.jpg'],
-        details: 'Featuring a comfortable stretch and elegant twisted design.',
-        colors: ['Blush Pink', 'Cream', 'Gray']
-    },
-    {
-        id: 'KC001',
-        name: 'Mini Heart Keychain',
-        category: 'keychains',
-        price: '$7.99',
-        description: 'Adorable heart-shaped keychain with secure metal ring.',
-        images: ['images/products/keychains/heart-keychain-1.jpg'],
-        details: 'Made with durable yarn and includes a strong metal keyring.',
-        colors: ['Red', 'Pink', 'White'],
-        featured: true
-    },
-    {
-        id: 'ACC001',
-        name: 'Butterfly Hair Clip',
-        category: 'accessories',
-        price: '$9.99',
-        description: 'Delicate butterfly-shaped hair clip with secure fastening.',
-        images: ['images/products/accessories/butterfly-clip-1.jpg'],
-        details: 'Handcrafted butterfly design attached to a reliable hair clip.',
-        colors: ['Purple', 'Pink', 'Blue'],
-        featured: true
-    }
+    
 ];
 
 // DOM Elements
